@@ -1,0 +1,85 @@
+.registerContainer {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.formContainer {
+  background-color: #fff;
+  padding: 20px;
+  padding-right: 70px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formTitle {
+  color: #000;
+  text-align: center;
+}
+
+.inputGroup {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  padding-left: 40px;
+  border: 1px solid #ccc;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: #666;
+}
+
+.inputIcon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: grey;
+}
+
+.submitButton {
+  background-color: #d32f2f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: green;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footerText {
+  color: #666;
+}
+
+.footerLink {
+  color: #d32f2f;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.footerLink:hover {
+  color: green;
+}
+
+@media screen and (max-width: 768px) {
+  .inputGroup {
+    flex-direction: column;
+  }
+}

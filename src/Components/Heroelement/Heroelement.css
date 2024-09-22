@@ -1,0 +1,57 @@
+/* Define keyframes for animation */
+@keyframes scrollerItemClicked {
+  0% {
+    transform: scale(1); /* Initial scale */
+  }
+  50% {
+    transform: scale(1.2); /* Scale up to 120% */
+  }
+  100% {
+    transform: scale(1); /* Return to original scale */
+  }
+}
+
+.hero-container {
+  overflow: hidden;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  height: 600px;
+}
+
+.hero-slider {
+  width: 100%;
+  white-space: nowrap;
+  transition: transform 0.3s ease-in;
+}
+
+.carousel-scroller {
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carousel-scroller ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-scroller ul li {
+  width: 10px;
+  height: 10px;
+  background-color: #e3e2e2;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Apply animation to scroller item when active */
+.carousel-scroller ul li:active {
+  background-color: #c19389;
+  animation: scrollerItemClicked 0.5s ease;
+}

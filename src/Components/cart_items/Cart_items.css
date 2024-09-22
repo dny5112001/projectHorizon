@@ -1,0 +1,33 @@
+.cart_items_container{
+    margin-top: 10px;
+    height: 150px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #dadada;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.cart_item_content{
+    width: 60%;
+}
+
+.cart_img_container img{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.cart_item_content p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.cart_remove-item p{
+    font-size: 30px;
+    font-weight: 600;
+    color: #c19389;
+}

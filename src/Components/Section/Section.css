@@ -1,0 +1,126 @@
+.section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.section__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.section__list li {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.additional {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  padding: 10px 30px;
+  font-weight: 600;
+}
+
+.additional button {
+  width: 150px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #e3e2e2;
+  outline: none;
+  background: white;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.additional button:hover {
+  background-color: #c19389;
+  transition: 0.2s ease-in;
+}
+
+.additional p {
+  cursor: pointer;
+}
+
+.section__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section__item {
+  cursor: pointer;
+}
+
+.hover-menu {
+  display: flex;
+  width: 40%;
+  height: 500px;
+  justify-content: center;
+  position: absolute;
+  background-color: white;
+  box-shadow: 1px 0px 10px #c19389;
+  border-radius: 10px;
+  z-index: 999;
+  border-radius: 10px;
+  padding: 30px 10px;
+  flex-wrap: wrap;
+  gap: 40px;
+  list-style: none;
+}
+
+.hidemenu {
+  display: none;
+}
+
+.section__list li:hover .hover-menu {
+  display: flex;
+}
+.hover-menu {
+  display: none; /* Initially hide the hover menu */
+}
+
+.hover-menu li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  height: 200px;
+  background-color: #e3e2e2;
+  border-radius: 10px;
+  padding: 5px 0px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.hover-menu li img {
+  width: 130px;
+  height: 150px;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.hover-menu li img:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-out;
+}
+
+#language-selector {
+  padding: 5px 20px;
+  outline: none;
+  border: 2px solid #e3e2e2;
+  border-radius: 5px;
+}
+
+#language-selector option {
+  border-radius: 0px;
+  padding: 5px 10px;
+}
